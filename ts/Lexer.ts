@@ -99,4 +99,22 @@ export class Lexer {
   private static _plusMin = {binop: 9, prefix: true, beforeExpr: true};
   private static _multiplyModulo = {binop: 10, beforeExpr: true};
 
+  tokTypes = {bracketL: Lexer._bracketL
+            , bracketR: Lexer._bracketR
+            , braceL: Lexer._braceL
+            , braceR: Lexer._braceR
+            , parenL: Lexer._parenL
+            , parenR: Lexer._parenR
+            , comma: Lexer._comma
+            , semi: Lexer._semi
+            , colon: Lexer._colon
+            , dot: Lexer._dot
+            , question: Lexer._question
+            , slash: Lexer._slash
+            , eq: Lexer._eq
+            , name: Lexer._name
+            , eof: Lexer._eof
+            , num: Lexer._num
+            , regexp: Lexer._regexp
+            , string: Lexer._string};
 }
